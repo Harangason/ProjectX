@@ -433,7 +433,7 @@ def aufgabe_068_countdown(n: int) -> list[int]:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_069_repeat_text(text: str, anzahl: int) -> str:
     """Wiederhole einen Text anzahl-mal hintereinander."""
-    pass
+    return text * anzahl
 
 
 # Gruppe: maro-101, HGKlemp
