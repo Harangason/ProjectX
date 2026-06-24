@@ -88,7 +88,16 @@ def aufgabe_011_verbinde_worte(worte: list[str], trenner: str = ", ") -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_012_laengstes_wort(worte: list[str]) -> Optional[str]:
     """Finde das längste Wort in der Liste, None bei leerer Liste."""
-    pass
+    if worte:
+        if isinstance(worte, str):
+            return len(worte)
+        max_length = len(worte[0])
+        for word in worte:
+            if len(word) > max_length:
+                max_length = len(word)
+        return max_length
+    return None
+
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -132,7 +141,9 @@ def aufgabe_018_max_wert(zahlen: list[int]) -> Optional[int]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_019_min_wert(zahlen: list[int]) -> Optional[int]:
     """Gib den kleinsten Wert zurück, None bei leerer Liste."""
-    pass
+    if not zahlen:
+        return None
+    return min(zahlen)
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -438,13 +449,14 @@ def aufgabe_068_countdown(n: int) -> list[int]:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_069_repeat_text(text: str, anzahl: int) -> str:
     """Wiederhole einen Text anzahl-mal hintereinander."""
-    pass
+    return text * anzahl
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_070_summenliste(werte: list[int]) -> list[int]:
     """Gib die kumulative Summe der Werte zurück."""
-    pass
+    total = 0
+    return [total := total + x for x in werte]
 
 
 # Gruppe: maro-101, HGKlemp
