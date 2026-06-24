@@ -94,7 +94,7 @@ def aufgabe_012_laengstes_wort(worte: list[str]) -> Optional[str]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_013_zaehle_ziffern(text: str) -> int:
     """Zähle alle Zeichen im Text, die Ziffern sind."""
-    pass
+    return sum(1 for zeichen in text if zeichen.isdigit())
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -415,7 +415,7 @@ def aufgabe_065_skaliere(werte: list[float], faktor: float) -> list[float]:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_066_moving_average(werte: list[float], fenster: int) -> list[float]:
     """Berechne gleitende Durchschnitte mit Fenstergröße fenster."""
-    pass
+    return [sum(werte[i : i + fenster]) / fenster for i in range(len(werte) - fenster + 1)]
 
 
 # Gruppe: maro-101, HGKlemp
