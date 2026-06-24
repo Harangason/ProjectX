@@ -94,7 +94,7 @@ def aufgabe_012_laengstes_wort(worte: list[str]) -> Optional[str]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_013_zaehle_ziffern(text: str) -> int:
     """Zähle alle Zeichen im Text, die Ziffern sind."""
-    pass
+    return sum(1 for zeichen in text if zeichen.isdigit())
 
 
 # Gruppe: dbudb, lindaEbbert
