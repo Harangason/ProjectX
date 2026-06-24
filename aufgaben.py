@@ -214,8 +214,30 @@ def aufgabe_030_flatten(liste_von_listen: list[list[int]]) -> list[int]:
 
 # Gruppe: Harangason, ThorKel1202
 def aufgabe_031_merge_lists(a: list[int], b: list[int]) -> list[int]:
-    """Mische zwei Listen abwechselnd (falls ungleich lang, Rest anhängen)."""
-    pass
+    """Führe zwei sortierte Listen zu einer sortierten Liste zusammen."""
+    
+    i = 0
+    j = 0
+    merged = []
+    
+    while i < len(a) and j < len(b):
+        if a[i] <= b[j]:
+            merged.append(a[i])
+            i += 1
+        else:
+            merged.append(b[j])
+            j += 1
+    
+    # Rest anhängen
+    while i < len(a):
+        merged.append(a[i])
+        i += 1
+    
+    while j < len(b):
+        merged.append(b[j])
+        j += 1
+    
+    return merged
 
 
 # Gruppe: Harangason, ThorKel1202
