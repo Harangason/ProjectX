@@ -46,7 +46,7 @@ def aufgabe_005_zu_kleinbuchstaben(text: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_006_capitalize_saetze(text: str) -> str:
     """Setze den ersten Buchstaben jedes Satzes auf Großbuchstaben."""
-    pass
+    return text.capitalize()[0] + text[1:]
 
 
 # Gruppe: dbudb, lindaEbbert
