@@ -6,7 +6,7 @@ getesteten Code und haltet euch an PEP 8.
 """
 
 from typing import Any, Optional
-
+03
 
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_001_spiegle_text(text: str) -> str:
@@ -323,8 +323,17 @@ def aufgabe_051_sum_range(n: int) -> int:
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_052_factorial(n: int) -> int:
-    """Berechne n! iterativ oder rekursiv."""
-    pass
+    """Berechne n! iterativ."""
+
+    if n < 0:
+        raise ValueError("Fakultät ist für negative Zahlen nicht definiert.")
+
+    result = 1
+
+    for i in range(1, n + 1):
+        result *= i
+
+    return result
 
 
 # Gruppe: maro-101, HGKlemp
