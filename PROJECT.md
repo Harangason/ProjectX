@@ -8,49 +8,35 @@ Single Source of Truth für Struktur, Gruppen und Aufgabenbereiche.
 |-------|--------------|
 | [`aufgaben.py`](aufgaben.py) | 100 Übungsfunktionen (Stubs mit Docstrings) |
 | [`README.md`](README.md) | Anleitung für Studierende |
-| [`tests/test_gruppen_zuordnung.py`](tests/test_gruppen_zuordnung.py) | Automatische Prüfung der Gruppenkommentare |
 
-## Gruppenaufteilung (5 Gruppen, je 20 Aufgaben)
+## Gruppenaufteilung (4 Gruppen, je 25 Aufgaben)
 
-Zuordnung laut Board (oben nach unten). Jede Gruppe hat zwei Personen.
+Zuordnung laut Board. Jede Gruppe hat zwei Personen.
 
-| Gruppe | GitHub-Handles | Aufgaben | Thema |
-|--------|----------------|----------|-------|
-| 1 | `Dni-schaf`, `smartsys` | `aufgabe_001` – `aufgabe_020` | Strings & Listen-Basics |
-| 2 | `Tobbyte`, `DuclosNgassa` | `aufgabe_021` – `aufgabe_040` | Listen-Operationen & Dict-Einstieg |
-| 3 | `Vincent-Pieper`, `SoerenNeumann1985` | `aufgabe_041` – `aufgabe_060` | Dicts, Sets & Mathematik |
-| 4 | `LarsPetschke`, `PaddePain` | `aufgabe_061` – `aufgabe_080` | Zahlen, Skalierung & Matrizen |
-| 5 | `binudio1`, `iSayaGen` | `aufgabe_081` – `aufgabe_100` | Algorithmen & Text-Parsing |
+| Gruppe | Personen | GitHub-Handles | Aufgaben |
+|--------|----------|----------------|----------|
+| 1 | Dennis, Linda | `dbudb`, `lindaEbbert` | `aufgabe_001` – `aufgabe_025` |
+| 2 | Martin, Thorsten | `Harangason`, `ThorKel1202` | `aufgabe_026` – `aufgabe_050` |
+| 3 | Marcel, Hans-Günter | `maro-101`, `HGKlemp` | `aufgabe_051` – `aufgabe_075` |
+| 4 | Aylin, Jugo | `Aylin65`, `jugomit` | `aufgabe_076` – `aufgabe_100` |
 
-## Aufgaben pro Gruppe (Kurzüberblick)
+## Branch-Schema
 
-### Gruppe 1 (001–020)
+`gruppe-x/github-name/aufgabe-xxx` — ein Branch pro Aufgabe.
 
-String-Manipulation, Wortlisten, Listen-Mathematik (Summe, Mittelwert, Min/Max, Sortieren).
+Beispiel: `gruppe-1/dbudb/aufgabe-001`
 
-### Gruppe 2 (021–040)
+## Workflow
 
-Listen sortieren/filtern, Utilities (flatten, chunk, rotate), Dict-Grundlagen.
-
-### Gruppe 3 (041–060)
-
-Dict-Operationen, Set-Operationen, Duplikate, Fakultät, Fibonacci, Primzahlen, GGT/KGV.
-
-### Gruppe 4 (061–080)
-
-Zahlenformatierung, Skalierung, gleitender Mittelwert, Dict-Vergleich, Matrizen.
-
-### Gruppe 5 (081–100)
-
-Suche & Sortierung, Anagramme, Tokenisierung, E-Mail/URL/KV-Parsing.
+Siehe [`README.md`](README.md): Branch anlegen → Aufgabe implementieren → in `master`/`main` mergen (PR optional).
 
 ## Regeln für Studierende
 
 - Nur den eigenen Aufgabenbereich in `aufgaben.py` bearbeiten.
 - Gruppenkommentare (`# Gruppe: ...`) nicht ändern.
-- Vor Abgabe: `python3 -m pytest tests/test_gruppen_zuordnung.py`
-- Branch-Naming: `gruppe-<nr>/<github-handle>` (z. B. `gruppe-1/Dni-schaf`)
+- Ein Branch und ein Merge pro Aufgabe.
 
 ## Änderungshistorie
 
-- **2026-06-22**: Neue Gruppenaufteilung nach Board (5×2 Personen, 20 Aufgaben pro Gruppe). Siehe [ADR](../.cursor/adr/0001-neue-gruppenaufteilung.md).
+- **2026-06-24**: 4 Gruppen mit neuen GitHub-Namen, 25 Aufgaben pro Gruppe, Branch pro Aufgabe. Siehe [ADR](.cursor/adr/0003-vier-gruppen-neue-namen.md).
+- **2026-06-22**: Gruppenaufteilung nach Board. Siehe [ADR](.cursor/adr/0001-neue-gruppenaufteilung.md).
