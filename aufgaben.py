@@ -33,7 +33,7 @@ def aufgabe_003_ist_palindrom(text: str) -> bool:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_004_zu_grossbuchstaben(text: str) -> str:
     """Wandle alle Zeichen in Großbuchstaben um."""
-    pass
+    return text.upper()
 
 
 # Gruppe: dbudb, lindaEbbert
