@@ -121,7 +121,7 @@ def aufgabe_015_slugify(text: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_016_summe_liste(zahlen: list[int]) -> int:
     """Summiere alle Zahlen in der Liste."""
-    pass
+    return sum(zahlen)
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -135,7 +135,9 @@ def aufgabe_017_mittelwert(zahlen: list[float]) -> float:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_018_max_wert(zahlen: list[int]) -> Optional[int]:
     """Gib den größten Wert zurück, None bei leerer Liste."""
-    pass
+    if zahlen:
+        return max(zahlen)
+    return None
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -167,7 +169,7 @@ def aufgabe_022_filter_gerade(zahlen: list[int]) -> list[int]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_023_filter_ungerade(zahlen: list[int]) -> list[int]:
     """Filtere alle ungeraden Zahlen aus der Liste."""
-    return [num % 2 != 0 for num in zahlen]
+    return [num for num in zahlen if num % 2 != 0]
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -179,7 +181,11 @@ def aufgabe_024_quadrate(zahlen: list[int]) -> list[int]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_025_unique_werte(zahlen: list[int]) -> list[int]:
     """Entferne Duplikate, erhalte die erste Reihenfolge."""
-    pass
+    ergebnis = []
+    for zahl in zahlen:
+        if zahl not in ergebnis:
+            ergebnis.append(zahl)
+    return ergebnis
 
 
 # Gruppe: Harangason, ThorKel1202
@@ -486,13 +492,13 @@ def aufgabe_071_zip_to_dict(keys: list[str], values: list[int]) -> dict[str, int
 # Gruppe: maro-101, HGKlemp
 def aufgabe_072_swap_keys_values(data: dict[str, str]) -> dict[str, str]:
     """Tausche Keys und Values, Fehler bei Duplikaten klären."""
-    pass
+    return {v: k for k, v in data.items()}
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_073_filter_dict_by_value(data: dict[str, int], minimum: int) -> dict[str, int]:
     """Filtere Einträge, deren Wert mindestens minimum ist."""
-    pass
+    return {k: v for k, v in data.items() if v >= minimum}
 
 
 # Gruppe: maro-101, HGKlemp
@@ -553,7 +559,7 @@ def aufgabe_082_join_ohne_letztes(worte: list[str]) -> str:
 
 # Gruppe: Aylin65, jugomit
 def aufgabe_083_count_characters_ignore_case(text: str) -> dict[str, int]:
-    """Zähle Zeichenhäufigkeiten ohne zwischen Groß/Klein zu unterscheiden."""
+    """Zähle Zeichenhäufigkeiten ohne zwischen Groß/Klein zu unterscheiden!"""
     pass
 
 
