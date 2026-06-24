@@ -118,7 +118,9 @@ def aufgabe_016_summe_liste(zahlen: list[int]) -> int:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_017_mittelwert(zahlen: list[float]) -> float:
     """Berechne den arithmetischen Mittelwert der Liste."""
-    pass
+    if not zahlen:
+        return 0.0
+    return sum(zahlen) / len(zahlen)
 
 
 # Gruppe: dbudb, lindaEbbert
