@@ -40,7 +40,7 @@ def aufgabe_004_zu_grossbuchstaben(text: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_005_zu_kleinbuchstaben(text: str) -> str:
     """Wandle alle Zeichen in Kleinbuchstaben um."""
-    pass
+    return text.lower()
 
 
 # Gruppe: dbudb, lindaEbbert
