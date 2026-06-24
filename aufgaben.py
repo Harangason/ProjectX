@@ -182,8 +182,7 @@ def aufgabe_027_teilliste(werte: list[int], start: int, ende: int) -> list[int]:
 # Gruppe: Harangason, ThorKel1202
 def aufgabe_028_zaehle_vorkommen(werte: list[str], gesucht: str) -> int:
     """Zähle, wie oft gesucht in der Liste vorkommt."""
-    pass
-
+    return werte.count(gesucht)
 
 # Gruppe: Harangason, ThorKel1202
 def aufgabe_029_drehe_liste(werte: list[Any]) -> list[Any]:
