@@ -355,7 +355,7 @@ def aufgabe_055_primzahlen_bis(limit: int) -> list[int]:
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_056_ggt(a: int, b: int) -> int:
-    """Berechne den größten gemeinsamen Teiler."""
+
     pass
 
 
