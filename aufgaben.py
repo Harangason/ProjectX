@@ -109,7 +109,7 @@ def aufgabe_013_zaehle_ziffern(text: str) -> int:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_014_entferne_whitespace(text: str) -> str:
     """Entferne alle Whitespaces (Leerzeichen, Tabs, Zeilenumbrüche)."""
-    pass
+    return "".join(text.split())
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -155,8 +155,7 @@ def aufgabe_020_sortiere_aufsteigend(zahlen: list[int]) -> list[int]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_021_sortiere_absteigend(zahlen: list[int]) -> list[int]:
     """Gib eine neue Liste mit absteigend sortierten Zahlen zurück."""
-    zahlen.sort(reverse=True)
-    return zahlen
+    return sorted(zahlen, reverse=True)
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -459,7 +458,7 @@ def aufgabe_070_summenliste(werte: list[int]) -> list[int]:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_071_zip_to_dict(keys: list[str], values: list[int]) -> dict[str, int]:
     """Baue ein Dict aus Schlüsseln und Werten gleicher Länge."""
-    pass
+    return dict(zip(keys, values))
 
 
 # Gruppe: maro-101, HGKlemp
@@ -496,8 +495,8 @@ def aufgabe_076_sortiere_tupel_nach_index(
 
 # Gruppe: Aylin65, jugomit
 def aufgabe_077_transponiere_matrix(matrix: list[list[int]]) -> list[list[int]]:
-    """Transponiere eine rechteckige Matrix."""
-    pass
+    """Transponiere eine rechteckige Matrix!"""
+    return [list(spalte) for spalte in zip(*matrix)]
 
 
 # Gruppe: Aylin65, jugomit
