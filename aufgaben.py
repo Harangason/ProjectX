@@ -317,7 +317,7 @@ def aufgabe_050_has_duplicates(werte: list[Any]) -> bool:
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_051_sum_range(n: int) -> int:
-    """Berechne die Summe der Zahlen von 1 bis n (inklusive)."""
+
     pass
 
 
