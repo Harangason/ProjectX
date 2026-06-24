@@ -135,7 +135,9 @@ def aufgabe_017_mittelwert(zahlen: list[float]) -> float:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_018_max_wert(zahlen: list[int]) -> Optional[int]:
     """Gib den größten Wert zurück, None bei leerer Liste."""
-    pass
+    if zahlen:
+        return max(zahlen)
+    return None
 
 
 # Gruppe: dbudb, lindaEbbert
