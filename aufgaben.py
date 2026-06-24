@@ -384,7 +384,7 @@ def aufgabe_061_int_zu_binaer(n: int) -> str:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_062_zahlenformat(n: float, nachkommastellen: int) -> str:
     """Formatiere eine Zahl mit fester Anzahl Nachkommastellen."""
-    pass
+    return f"{n:.{nachkommastellen}f}"
 
 
 # Gruppe: maro-101, HGKlemp
