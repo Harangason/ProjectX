@@ -88,7 +88,16 @@ def aufgabe_011_verbinde_worte(worte: list[str], trenner: str = ", ") -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_012_laengstes_wort(worte: list[str]) -> Optional[str]:
     """Finde das längste Wort in der Liste, None bei leerer Liste."""
-    pass
+    if worte:
+        if isinstance(worte, str):
+            return len(worte)
+        max_length = len(worte[0])
+        for word in worte:
+            if len(word) > max_length:
+                max_length = len(word)
+        return max_length
+    return None
+
 
 
 # Gruppe: dbudb, lindaEbbert
