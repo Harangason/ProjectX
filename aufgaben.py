@@ -52,7 +52,7 @@ def aufgabe_006_capitalize_saetze(text: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_007_ersetze_zeichen(text: str, alt: str, neu: str) -> str:
     """Ersetze alle Vorkommen von alt durch neu in text."""
-    pass
+    return text.replace(alt, neu)
 
 
 # Gruppe: dbudb, lindaEbbert
