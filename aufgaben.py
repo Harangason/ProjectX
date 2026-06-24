@@ -335,7 +335,7 @@ def aufgabe_052_factorial(n: int) -> int:
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_053_fibonacci(n: int) -> list[int]:
-    """Gib eine Liste der ersten n Fibonacci-Zahlen zurück."""
+
     pass
 
 
