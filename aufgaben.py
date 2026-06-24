@@ -464,7 +464,7 @@ def aufgabe_071_zip_to_dict(keys: list[str], values: list[int]) -> dict[str, int
 # Gruppe: maro-101, HGKlemp
 def aufgabe_072_swap_keys_values(data: dict[str, str]) -> dict[str, str]:
     """Tausche Keys und Values, Fehler bei Duplikaten klären."""
-    pass
+    return {v: k for k, v in data.items()}
 
 
 # Gruppe: maro-101, HGKlemp
