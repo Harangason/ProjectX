@@ -6,7 +6,7 @@ getesteten Code und haltet euch an PEP 8.
 """
 
 from typing import Any, Optional
-03
+
 
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_001_spiegle_text(text: str) -> str:
@@ -64,7 +64,9 @@ def aufgabe_008_zaehle_wort(text: str, wort: str) -> int:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_009_kuerze_text(text: str, limit: int) -> str:
     """Schneide den Text nach limit Zeichen ab und füge '...' an, falls nötig."""
-    pass
+    if len(text) > limit:
+        return text[:limit] + "..."
+    return text
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -323,17 +325,8 @@ def aufgabe_051_sum_range(n: int) -> int:
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_052_factorial(n: int) -> int:
-    """Berechne n! iterativ."""
-
-    if n < 0:
-        raise ValueError("Fakultät ist für negative Zahlen nicht definiert.")
-
-    result = 1
-
-    for i in range(1, n + 1):
-        result *= i
-
-    return result
+    """Berechne n! iterativ oder rekursiv."""
+    pass
 
 
 # Gruppe: maro-101, HGKlemp
@@ -399,13 +392,14 @@ def aufgabe_062_zahlenformat(n: float, nachkommastellen: int) -> str:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_063_clamp(wert: float, minimum: float, maximum: float) -> float:
     """Begrenze wert auf den Bereich [minimum, maximum]."""
-    pass
+    return max(minimum, min(wert, maximum))
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_064_normiere(werte: list[float]) -> list[float]:
     """Skaliere Werte in den Bereich 0..1 (min-max-Normierung)."""
-    pass
+    mn, mx = min(werte), max(werte)
+    return [(x - mn) / (mx - mn) for x in werte]
 
 
 # Gruppe: maro-101, HGKlemp
