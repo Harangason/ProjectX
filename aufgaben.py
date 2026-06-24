@@ -361,7 +361,7 @@ def aufgabe_056_ggt(a: int, b: int) -> int:
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_057_kgv(a: int, b: int) -> int:
-    """Berechne das kleinste gemeinsame Vielfache."""
+
     pass
 
 
