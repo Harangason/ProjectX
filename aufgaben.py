@@ -384,7 +384,7 @@ def aufgabe_058_durchschnitt_gewichtet(werte: list[float], gewichte: list[float]
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_059_anzahl_true(flags: list[bool]) -> int:
-    """Zähle die True-Werte in einer Bool-Liste."""
+
     pass
 
 
