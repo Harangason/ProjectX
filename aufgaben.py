@@ -106,7 +106,7 @@ def aufgabe_014_entferne_whitespace(text: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_015_slugify(text: str) -> str:
     """Erzeuge einen einfachen Slug: Kleinbuchstaben, '-' statt Leerzeichen."""
-    pass
+    return text.lower().replace(" ", "-")
 
 
 # Gruppe: dbudb, lindaEbbert
