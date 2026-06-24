@@ -415,7 +415,7 @@ def aufgabe_065_skaliere(werte: list[float], faktor: float) -> list[float]:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_066_moving_average(werte: list[float], fenster: int) -> list[float]:
     """Berechne gleitende Durchschnitte mit Fenstergröße fenster."""
-    pass
+    return [sum(werte[i : i + fenster]) / fenster for i in range(len(werte) - fenster + 1)]
 
 
 # Gruppe: maro-101, HGKlemp
