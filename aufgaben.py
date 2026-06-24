@@ -167,7 +167,7 @@ def aufgabe_022_filter_gerade(zahlen: list[int]) -> list[int]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_023_filter_ungerade(zahlen: list[int]) -> list[int]:
     """Filtere alle ungeraden Zahlen aus der Liste."""
-    return [num % 2 != 0 for num in zahlen]
+    return [num for num in zahlen if num % 2 != 0]
 
 
 # Gruppe: dbudb, lindaEbbert
