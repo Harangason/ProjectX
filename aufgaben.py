@@ -390,7 +390,7 @@ def aufgabe_062_zahlenformat(n: float, nachkommastellen: int) -> str:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_063_clamp(wert: float, minimum: float, maximum: float) -> float:
     """Begrenze wert auf den Bereich [minimum, maximum]."""
-    pass
+    return max(minimum, min(wert, maximum))
 
 
 # Gruppe: maro-101, HGKlemp
