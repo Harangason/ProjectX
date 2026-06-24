@@ -347,7 +347,7 @@ def aufgabe_054_ist_primzahl(n: int) -> bool:
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_055_primzahlen_bis(limit: int) -> list[int]:
-    """Gib alle Primzahlen bis inklusive limit zurück."""
+
     pass
 
 
