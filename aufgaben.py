@@ -167,7 +167,13 @@ def aufgabe_026_finde_index(werte: list[str], wert: str) -> int:
 # Gruppe: Harangason, ThorKel1202
 def aufgabe_027_teilliste(werte: list[int], start: int, ende: int) -> list[int]:
     """Gib eine Teilliste von start (inkl.) bis ende (exkl.) zurück."""
-    pass
+    
+    teilliste = []
+    
+    for i in range(start, ende):
+        teilliste.append(werte[i])
+    
+    return teilliste
 
 
 # Gruppe: Harangason, ThorKel1202
