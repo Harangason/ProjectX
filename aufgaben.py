@@ -405,7 +405,7 @@ def aufgabe_064_normiere(werte: list[float]) -> list[float]:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_065_skaliere(werte: list[float], faktor: float) -> list[float]:
     """Multipliziere jeden Wert mit faktor."""
-    pass
+    return [x * faktor for x in werte]
 
 
 # Gruppe: maro-101, HGKlemp
