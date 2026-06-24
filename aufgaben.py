@@ -389,7 +389,7 @@ def aufgabe_059_anzahl_true(flags: list[bool]) -> int:
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_060_binaer_zu_int(bits: str) -> int:
-    """Wandle einen Binärstring in eine Ganzzahl um."""
+
     pass
 
 
