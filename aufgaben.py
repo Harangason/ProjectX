@@ -341,7 +341,7 @@ def aufgabe_053_fibonacci(n: int) -> list[int]:
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_054_ist_primzahl(n: int) -> bool:
-    """Prüfe, ob n eine Primzahl ist."""
+
     pass
 
 
