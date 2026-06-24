@@ -551,7 +551,6 @@ def aufgabe_089_two_sum(werte: list[int], ziel: int) -> Optional[tuple[int, int]
 
 # Gruppe: Aylin65, jugomit
 def aufgabe_090_anagramm(text_a: str, text_b: str) -> bool:
-    """Prüfe, ob zwei Strings Anagramme sind."""
     pass
 
 
