@@ -155,8 +155,7 @@ def aufgabe_020_sortiere_aufsteigend(zahlen: list[int]) -> list[int]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_021_sortiere_absteigend(zahlen: list[int]) -> list[int]:
     """Gib eine neue Liste mit absteigend sortierten Zahlen zurück."""
-    zahlen.sort(reverse=True)
-    return zahlen
+    return sorted(zahlen, reverse=True)
 
 
 # Gruppe: dbudb, lindaEbbert
