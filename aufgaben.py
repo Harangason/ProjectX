@@ -189,9 +189,15 @@ def aufgabe_028_zaehle_vorkommen(werte: list[str], gesucht: str) -> int:
 
 
 # Gruppe: Harangason, ThorKel1202
-def aufgabe_029_drehe_liste(werte: list[Any]) -> list[Any]:
+def aufgabe_029_drehe_liste(werte):
     """Drehe die Reihenfolge der Liste um."""
-    pass
+    
+    gedreht = []
+    
+    for i in range(len(werte) - 1, -1, -1):
+        gedreht.append(werte[i])
+    
+    return gedreht
 
 
 # Gruppe: Harangason, ThorKel1202
