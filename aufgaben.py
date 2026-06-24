@@ -10,7 +10,8 @@ from typing import Any, Optional
 
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_001_spiegle_text(text: str) -> str:
-    pass
+    """Spiegle den Inputstring und gebe das Ergebnis zurück """
+    return str[::-1]
 
 
 # Gruppe: dbudb, lindaEbbert
