@@ -441,7 +441,8 @@ def aufgabe_069_repeat_text(text: str, anzahl: int) -> str:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_070_summenliste(werte: list[int]) -> list[int]:
     """Gib die kumulative Summe der Werte zurück."""
-    pass
+    total = 0
+    return [total := total + x for x in werte]
 
 
 # Gruppe: maro-101, HGKlemp
