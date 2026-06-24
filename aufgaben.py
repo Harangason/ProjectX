@@ -141,7 +141,9 @@ def aufgabe_018_max_wert(zahlen: list[int]) -> Optional[int]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_019_min_wert(zahlen: list[int]) -> Optional[int]:
     """Gib den kleinsten Wert zurück, None bei leerer Liste."""
-    pass
+    if not zahlen:
+        return None
+    return min(zahlen)
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -450,7 +452,8 @@ def aufgabe_069_repeat_text(text: str, anzahl: int) -> str:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_070_summenliste(werte: list[int]) -> list[int]:
     """Gib die kumulative Summe der Werte zurück."""
-    pass
+    total = 0
+    return [total := total + x for x in werte]
 
 
 # Gruppe: maro-101, HGKlemp
