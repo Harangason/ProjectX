@@ -64,7 +64,9 @@ def aufgabe_008_zaehle_wort(text: str, wort: str) -> int:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_009_kuerze_text(text: str, limit: int) -> str:
     """Schneide den Text nach limit Zeichen ab und füge '...' an, falls nötig."""
-    pass
+    if len(text) > limit:
+        return text[:limit] + "..."
+    return text
 
 
 # Gruppe: dbudb, lindaEbbert
