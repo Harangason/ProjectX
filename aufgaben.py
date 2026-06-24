@@ -396,7 +396,8 @@ def aufgabe_063_clamp(wert: float, minimum: float, maximum: float) -> float:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_064_normiere(werte: list[float]) -> list[float]:
     """Skaliere Werte in den Bereich 0..1 (min-max-Normierung)."""
-    pass
+    mn, mx = min(werte), max(werte)
+    return [(x - mn) / (mx - mn) for x in werte]
 
 
 # Gruppe: maro-101, HGKlemp
