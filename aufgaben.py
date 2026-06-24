@@ -76,7 +76,7 @@ def aufgabe_009_kuerze_text(text: str, limit: int) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_010_teile_worte(text: str) -> list[str]:
     """Zerlege einen Satz in Wörter, getrennt nach Leerzeichen."""
-    pass
+    return text.split()
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -106,7 +106,7 @@ def aufgabe_014_entferne_whitespace(text: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_015_slugify(text: str) -> str:
     """Erzeuge einen einfachen Slug: Kleinbuchstaben, '-' statt Leerzeichen."""
-    pass
+    return text.lower().replace(" ", "-")
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -421,7 +421,7 @@ def aufgabe_066_moving_average(werte: list[float], fenster: int) -> list[float]:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_067_linear_map(wert: float, alt_min: float, alt_max: float, neu_min: float, neu_max: float) -> float:
     """Mappe wert linear vom Bereich alt_min..alt_max nach neu_min..neu_max."""
-    pass
+    return neu_min + (wert - alt_min) * (neu_max - neu_min) / (alt_max - alt_min)
 
 
 # Gruppe: maro-101, HGKlemp
