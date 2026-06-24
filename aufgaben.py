@@ -121,7 +121,7 @@ def aufgabe_015_slugify(text: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_016_summe_liste(zahlen: list[int]) -> int:
     """Summiere alle Zahlen in der Liste."""
-    pass
+    return sum(zahlen)
 
 
 # Gruppe: dbudb, lindaEbbert
