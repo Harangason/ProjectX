@@ -109,7 +109,7 @@ def aufgabe_013_zaehle_ziffern(text: str) -> int:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_014_entferne_whitespace(text: str) -> str:
     """Entferne alle Whitespaces (Leerzeichen, Tabs, Zeilenumbrüche)."""
-    pass
+    return "".join(text.split())
 
 
 # Gruppe: dbudb, lindaEbbert
