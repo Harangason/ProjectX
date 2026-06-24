@@ -376,7 +376,7 @@ def aufgabe_057_kgv(a: int, b: int) -> int:
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_058_durchschnitt_gewichtet(werte: list[float], gewichte: list[float]) -> float:
-    """Berechne den gewichteten Mittelwert, gleiche Länge vorausgesetzt."""
+
     pass
 
 
