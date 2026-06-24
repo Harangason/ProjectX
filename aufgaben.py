@@ -200,7 +200,7 @@ def aufgabe_029_drehe_liste(werte: list[Any]) -> list[Any]:
 # Gruppe: Harangason, ThorKel1202
 def aufgabe_030_flatten(liste_von_listen: list[list[int]]) -> list[int]:
     """Führe eine verschachtelte Liste zu einer flachen Liste zusammen."""
-    pass
+    return [wert for teilliste in liste_von_listen for wert in teilliste]
 
 
 # Gruppe: Harangason, ThorKel1202
