@@ -470,7 +470,7 @@ def aufgabe_072_swap_keys_values(data: dict[str, str]) -> dict[str, str]:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_073_filter_dict_by_value(data: dict[str, int], minimum: int) -> dict[str, int]:
     """Filtere Einträge, deren Wert mindestens minimum ist."""
-    pass
+    return {k: v for k, v in data.items() if v >= minimum}
 
 
 # Gruppe: maro-101, HGKlemp
