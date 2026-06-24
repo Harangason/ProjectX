@@ -40,31 +40,37 @@ def aufgabe_004_zu_grossbuchstaben(text: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_005_zu_kleinbuchstaben(text: str) -> str:
     """Wandle alle Zeichen in Kleinbuchstaben um."""
-    pass
+    return text.lower()
 
 
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_006_capitalize_saetze(text: str) -> str:
     """Setze den ersten Buchstaben jedes Satzes auf Großbuchstaben."""
-    pass
+    return text.capitalize()[0] + text[1:]
 
 
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_007_ersetze_zeichen(text: str, alt: str, neu: str) -> str:
     """Ersetze alle Vorkommen von alt durch neu in text."""
-    pass
+    return text.replace(alt, neu)
 
 
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_008_zaehle_wort(text: str, wort: str) -> int:
     """Zähle, wie oft wort im Text vorkommt (wortgenau)."""
-    pass
+    total_occurrences = 0
+    for word in text.split():
+        if word.lower() == wort.lower():
+            total_occurrences += 1
+    return total_occurrences
 
 
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_009_kuerze_text(text: str, limit: int) -> str:
     """Schneide den Text nach limit Zeichen ab und füge '...' an, falls nötig."""
-    pass
+    if len(text) > limit:
+        return text[:limit] + "..."
+    return text
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -76,7 +82,7 @@ def aufgabe_010_teile_worte(text: str) -> list[str]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_011_verbinde_worte(worte: list[str], trenner: str = ", ") -> str:
     """Verbinde Wörter mit dem angegebenen Trenner zu einem String."""
-    pass
+    return trenner.join(worte)
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -381,37 +387,38 @@ def aufgabe_060_binaer_zu_int(bits: str) -> int:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_061_int_zu_binaer(n: int) -> str:
     """Wandle eine Ganzzahl in einen Binärstring ohne Präfix um."""
-    pass
+    return f"{n:b}"
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_062_zahlenformat(n: float, nachkommastellen: int) -> str:
     """Formatiere eine Zahl mit fester Anzahl Nachkommastellen."""
-    pass
+    return f"{n:.{nachkommastellen}f}"
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_063_clamp(wert: float, minimum: float, maximum: float) -> float:
     """Begrenze wert auf den Bereich [minimum, maximum]."""
-    pass
+    return max(minimum, min(wert, maximum))
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_064_normiere(werte: list[float]) -> list[float]:
     """Skaliere Werte in den Bereich 0..1 (min-max-Normierung)."""
-    pass
+    mn, mx = min(werte), max(werte)
+    return [(x - mn) / (mx - mn) for x in werte]
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_065_skaliere(werte: list[float], faktor: float) -> list[float]:
     """Multipliziere jeden Wert mit faktor."""
-    pass
+    return [x * faktor for x in werte]
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_066_moving_average(werte: list[float], fenster: int) -> list[float]:
     """Berechne gleitende Durchschnitte mit Fenstergröße fenster."""
-    pass
+    return [sum(werte[i : i + fenster]) / fenster for i in range(len(werte) - fenster + 1)]
 
 
 # Gruppe: maro-101, HGKlemp
