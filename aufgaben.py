@@ -58,7 +58,11 @@ def aufgabe_007_ersetze_zeichen(text: str, alt: str, neu: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_008_zaehle_wort(text: str, wort: str) -> int:
     """Zähle, wie oft wort im Text vorkommt (wortgenau)."""
-    pass
+    total_occurrences = 0
+    for word in text.split():
+        if word.lower() == wort.lower():
+            total_occurrences += 1
+    return total_occurrences
 
 
 # Gruppe: dbudb, lindaEbbert
