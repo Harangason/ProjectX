@@ -373,7 +373,7 @@ def aufgabe_060_binaer_zu_int(bits: str) -> int:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_061_int_zu_binaer(n: int) -> str:
     """Wandle eine Ganzzahl in einen Binärstring ohne Präfix um."""
-    pass
+    return f"{n:b}"
 
 
 # Gruppe: maro-101, HGKlemp
