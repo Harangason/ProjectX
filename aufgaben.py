@@ -76,7 +76,7 @@ def aufgabe_009_kuerze_text(text: str, limit: int) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_010_teile_worte(text: str) -> list[str]:
     """Zerlege einen Satz in Wörter, getrennt nach Leerzeichen."""
-    pass
+    return text.split()
 
 
 # Gruppe: dbudb, lindaEbbert
