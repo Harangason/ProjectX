@@ -10,7 +10,6 @@ from typing import Any, Optional
 
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_001_spiegle_text(text: str) -> str:
-    """Gib den Text rückwärts zurück."""
     pass
 
 
