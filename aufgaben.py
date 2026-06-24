@@ -421,13 +421,13 @@ def aufgabe_066_moving_average(werte: list[float], fenster: int) -> list[float]:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_067_linear_map(wert: float, alt_min: float, alt_max: float, neu_min: float, neu_max: float) -> float:
     """Mappe wert linear vom Bereich alt_min..alt_max nach neu_min..neu_max."""
-    pass
+    return neu_min + (wert - alt_min) * (neu_max - neu_min) / (alt_max - alt_min)
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_068_countdown(n: int) -> list[int]:
     """Gib eine Liste von n bis 0 zurück."""
-    pass
+    return list(range(n, -1, -1))
 
 
 # Gruppe: maro-101, HGKlemp
