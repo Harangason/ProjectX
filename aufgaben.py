@@ -504,13 +504,31 @@ def aufgabe_073_filter_dict_by_value(data: dict[str, int], minimum: int) -> dict
 # Gruppe: maro-101, HGKlemp
 def aufgabe_074_werte_aufaddieren(datensaetze: list[dict[str, int]]) -> dict[str, int]:
     """Summiere Werte gleicher Schlüssel über mehrere Dicts."""
-    pass
+    ergebnis = {}
+    for d in datensaetze:
+        for k, v in d.items():
+            ergebnis[k] = ergebnis.get(k, 0) + v
+    return ergebnis
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_075_dict_diff(a: dict[str, int], b: dict[str, int]) -> dict[str, str]:
     """Vergleiche a und b: 'gleich', 'nur_a', 'nur_b', 'anders' pro Schlüssel."""
-    pass
+    ergebnis = {}
+    alle_schluessel = set(a.keys()) | set(b.keys())
+
+    for k in alle_schluessel:
+        if k in a and k in b:
+            if a[k] == b[k]:
+                ergebnis[k] = "gleich"
+            else:
+                ergebnis[k] = "anders"
+        elif k in a:
+            ergebnis[k] = "nur_a"
+        else:
+            ergebnis[k] = "nur_b"
+
+    return ergebnis
 
 
 # Gruppe: Aylin65, jugomit
