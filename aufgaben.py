@@ -482,7 +482,11 @@ def aufgabe_073_filter_dict_by_value(data: dict[str, int], minimum: int) -> dict
 # Gruppe: maro-101, HGKlemp
 def aufgabe_074_werte_aufaddieren(datensaetze: list[dict[str, int]]) -> dict[str, int]:
     """Summiere Werte gleicher Schlüssel über mehrere Dicts."""
-    pass
+    ergebnis = {}
+    for d in datensaetze:
+        for k, v in d.items():
+            ergebnis[k] = ergebnis.get(k, 0) + v
+    return ergebnis
 
 
 # Gruppe: maro-101, HGKlemp
