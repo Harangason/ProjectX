@@ -482,8 +482,8 @@ def aufgabe_076_sortiere_tupel_nach_index(
 
 # Gruppe: Aylin65, jugomit
 def aufgabe_077_transponiere_matrix(matrix: list[list[int]]) -> list[list[int]]:
-    """Transponiere eine rechteckige Matrix."""
-    pass
+    """Transponiere eine rechteckige Matrix!"""
+    return [list(spalte) for spalte in zip(*matrix)]
 
 
 # Gruppe: Aylin65, jugomit
