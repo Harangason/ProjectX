@@ -52,7 +52,7 @@ def aufgabe_006_capitalize_saetze(text: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_007_ersetze_zeichen(text: str, alt: str, neu: str) -> str:
     """Ersetze alle Vorkommen von alt durch neu in text."""
-    pass
+    return text.replace(alt, neu)
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -378,13 +378,13 @@ def aufgabe_060_binaer_zu_int(bits: str) -> int:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_061_int_zu_binaer(n: int) -> str:
     """Wandle eine Ganzzahl in einen Binärstring ohne Präfix um."""
-    pass
+    return f"{n:b}"
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_062_zahlenformat(n: float, nachkommastellen: int) -> str:
     """Formatiere eine Zahl mit fester Anzahl Nachkommastellen."""
-    pass
+    return f"{n:.{nachkommastellen}f}"
 
 
 # Gruppe: maro-101, HGKlemp
