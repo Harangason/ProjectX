@@ -179,7 +179,11 @@ def aufgabe_024_quadrate(zahlen: list[int]) -> list[int]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_025_unique_werte(zahlen: list[int]) -> list[int]:
     """Entferne Duplikate, erhalte die erste Reihenfolge."""
-    pass
+    ergebnis = []
+    for zahl in zahlen:
+        if zahl not in ergebnis:
+            ergebnis.append(zahl)
+    return ergebnis
 
 
 # Gruppe: Harangason, ThorKel1202
