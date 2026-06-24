@@ -76,7 +76,7 @@ def aufgabe_009_kuerze_text(text: str, limit: int) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_010_teile_worte(text: str) -> list[str]:
     """Zerlege einen Satz in Wörter, getrennt nach Leerzeichen."""
-    pass
+    return text.split()
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -94,7 +94,7 @@ def aufgabe_012_laengstes_wort(worte: list[str]) -> Optional[str]:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_013_zaehle_ziffern(text: str) -> int:
     """Zähle alle Zeichen im Text, die Ziffern sind."""
-    pass
+    return sum(1 for zeichen in text if zeichen.isdigit())
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -106,7 +106,7 @@ def aufgabe_014_entferne_whitespace(text: str) -> str:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_015_slugify(text: str) -> str:
     """Erzeuge einen einfachen Slug: Kleinbuchstaben, '-' statt Leerzeichen."""
-    pass
+    return text.lower().replace(" ", "-")
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -118,7 +118,9 @@ def aufgabe_016_summe_liste(zahlen: list[int]) -> int:
 # Gruppe: dbudb, lindaEbbert
 def aufgabe_017_mittelwert(zahlen: list[float]) -> float:
     """Berechne den arithmetischen Mittelwert der Liste."""
-    pass
+    if not zahlen:
+        return 0.0
+    return sum(zahlen) / len(zahlen)
 
 
 # Gruppe: dbudb, lindaEbbert
@@ -424,13 +426,13 @@ def aufgabe_066_moving_average(werte: list[float], fenster: int) -> list[float]:
 # Gruppe: maro-101, HGKlemp
 def aufgabe_067_linear_map(wert: float, alt_min: float, alt_max: float, neu_min: float, neu_max: float) -> float:
     """Mappe wert linear vom Bereich alt_min..alt_max nach neu_min..neu_max."""
-    pass
+    return neu_min + (wert - alt_min) * (neu_max - neu_min) / (alt_max - alt_min)
 
 
 # Gruppe: maro-101, HGKlemp
 def aufgabe_068_countdown(n: int) -> list[int]:
     """Gib eine Liste von n bis 0 zurück."""
-    pass
+    return list(range(n, -1, -1))
 
 
 # Gruppe: maro-101, HGKlemp
@@ -476,9 +478,11 @@ def aufgabe_075_dict_diff(a: dict[str, int], b: dict[str, int]) -> dict[str, str
 
 
 # Gruppe: Aylin65, jugomit
-def aufgabe_076_sortiere_tupel_nach_index(eintraege: list[tuple[Any, ...]], index: int = 0) -> list[tuple[Any, ...]]:
+def aufgabe_076_sortiere_tupel_nach_index(
+    eintraege: list[tuple[Any, ...]], index: int = 0
+) -> list[tuple[Any, ...]]:
     """Sortiere eine Liste von Tupeln nach dem angegebenen Index."""
-    pass
+    return sorted(eintraege, key=lambda tupel: tupel[index])
 
 
 # Gruppe: Aylin65, jugomit
